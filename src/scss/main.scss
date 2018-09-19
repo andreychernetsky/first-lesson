@@ -36,6 +36,27 @@ a {
         outline: 0;
     }
 }
+.line {
+    width:95%;
+    background-color: #ddd;
+    height:1px;
+    margin:auto;
+}
+.main-title {
+    font-size:$font-size * 2;
+    letter-spacing: 3px;
+    margin: 0;
+    padding: 10px 20px;
+}
+.main-img {
+    background: url(../../public/img/222.jpg) no-repeat scroll center;
+    //-moz-background-size: cover;
+    //-o-background-size: cover;
+    //-webkit-background-size: cover;
+    //background-size: cover;
+    //@include box-shadow(0, 2px, 5px, #555);
+}
+
 
 
 
