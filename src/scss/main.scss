@@ -50,12 +50,44 @@ a {
 }
 .main-img {
     height: 410px;
-    background: url(img/222.jpg) no-repeat scroll center;
-    //-moz-background-size: cover;
-    //-o-background-size: cover;
-    //-webkit-background-size: cover;
-    //background-size: cover;
-    //@include box-shadow(0, 2px, 5px, #555);
+    width: 100%;
+    background: url(img/222.jpg) no-repeat scroll center center;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+    @include box-shadow(0, 2px, 5px, #555);
+}
+#owl-demo .item {
+    margin: 3px;
+}
+#owl-demo .item img {
+    display: block;
+    width: 100%;
+    height: auto;
+    @include box-shadow(0, 2px, 5px, #555);
+}
+.section-title {
+    margin: 10px 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: $font-size * 1.3;
+}
+.container {
+    max-width: 1200px;
+    width: 95%;
+    margin: 0 auto;
+}
+.picter-section,
+.bio-section,
+.history-section,
+.routes-section,
+.contacts-section {
+    padding: 50px 0;
+}
+
+.nature-desc {
+    padding: 10px 0 0;
 }
 
 

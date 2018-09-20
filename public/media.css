@@ -11,6 +11,12 @@
         -ms-flex: 0 1 180px;
         flex: 0 1 180px;
     }
+    .site-content {
+        width: 100%;
+    }
+    .main-img {
+        width: 100%;
+    }
     .main-title {
         font-size: 24px;
     }
@@ -46,5 +52,11 @@
         -webkit-flex: 0 1 90%;
         -ms-flex: 0 1 90%;
         flex: 0 1 90%;
+    }
+    .site-content {
+        width: 100%;
+    }
+    .main-img {
+
     }
 }
