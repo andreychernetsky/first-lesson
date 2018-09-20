@@ -11,11 +11,11 @@
         -ms-flex: 0 1 180px;
         flex: 0 1 180px;
     }
-    .site-content {
-        width: 100%;
-    }
-    .main-img {
-        width: 100%;
+    /*.site-content {*/
+        /*width: 100%;*/
+    /*}*/
+    /*.main-img {*/
+        /*width: 100%;*/
     }
     .main-title {
         font-size: 24px;
