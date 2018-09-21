@@ -16,9 +16,9 @@
      // Slider
      $("#owl-demo").owlCarousel({
          autoPlay: 3000, //Set AutoPlay to 3 seconds
-         items : 4,
-         itemsDesktop : [500,5],
-         itemsDesktopSmall : [200,5]
+         items : 5,
+         itemsDesktop : [1200,5],
+         itemsDesktopSmall : [190,5]
      });
      // Tabs
      $('#responsiveTabsDemo').responsiveTabs({

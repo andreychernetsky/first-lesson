@@ -86,10 +86,33 @@ a {
     padding: 50px 0;
 }
 
-.nature-desc {
-    padding: 10px 0 0;
+.wrap-bio {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: stretch;
+    align-content: stretch;
 }
 
+.bio-item {
+    text-align: center;
+    width: 280px;
+    margin: 20px;
+    img {
+        width: 215px;
+        height: 200px;
+        @include box-shadow(0, 2px, 5px, #555);
+        @include border-radius(50%);
+    }
+}
+
+.item-title {
+    color: $accent-color;
+    text-transform: uppercase;
+    margin: 5px auto;
+}
 
 
 
