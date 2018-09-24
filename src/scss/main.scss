@@ -111,6 +111,78 @@ a {
     text-transform: uppercase;
     margin: 5px auto;
 }
+.history-section {
+    padding: 50px 0;
+
+}
+.history-tabs {
+    text-align: center;
+}
+.r-tabs-anchor {
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+    padding: 5px 10px;
+    color: $accent-color;
+    border: 1px solid $accent-color;
+    @include border-radius(3px);
+    @include transition(all, 0.35s, ease, 0s);
+    &:hover {
+        color: $hover-color;
+        border: 1px solid $hover-color;
+    }
+}
+
+.history-item-img {
+    img {
+        display: block;
+        margin: auto;
+        max-width: 600px;
+        max-height: 400px;
+        width: 100%;
+        @include box-shadow(0, 2px, 5px, #555);
+    }
+}
+
+.history-item-desc {
+    padding: 10px 0 0;
+}
+
+.routes-item {
+    margin: 20px 0;
+    padding: 15px;
+    border: 1px solid $accent-color;
+    @include border-radius(5px);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: stretch;
+}
+.routes-item-img {
+    img {
+        display: block;
+        margin: auto;
+        width: 300px;
+        height: 200px;
+        @include border-radius(3px);
+        @include box-shadow(0, 2px, 5px, #555);
+    }
+}
+
+.routes-item-desc {
+    padding: 0 15px;
+    p {
+        font-style: italic;
+        font-size: $font-size * 0.9;
+    }
+}
+
+.routes-item-line {
+    background-color: $accent-color;
+    height: 15px;
+    margin-top: 10px;
+}
 
 
 

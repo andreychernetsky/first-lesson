@@ -17,3 +17,8 @@
     -webkit-border-radius: $radius;
     border-radius: $radius;
 }
+
+//slider
+@mixin tran($time: 0.3){
+  transition: $time+s ease;
+}
