@@ -7,7 +7,7 @@
 
 
 body {
-    background-color:#ddd;
+    background-color: #ddd;
     font-family: $main-font;
     color: $main-color;
     margin: 0;
@@ -16,10 +16,10 @@ body {
 }
 
 .wrap-site {
-    background-color:#F8F9FB;
-    max-width: 1480px;
+    background-color: #fff;
+    max-width: 1680px;
     min-width: 320px;
-    margin: 20px auto;
+    margin: 0 auto;
     padding-top: 60px;
     @include box-shadow(0, 2px, 5px, #555);
 }
@@ -36,26 +36,121 @@ a {
         outline: 0;
     }
 }
-.line {
-    width:95%;
-    background-color: #ddd;
-    height:1px;
-    margin:auto;
+
+.site-header {
+    background-color: rgba(255, 255, 255, 0.9);
+    margin: 0;
+    padding: 0;
+    max-width: 1680px;
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: stretch;
 }
+
+.top-menu {
+    ul {
+        margin: 0;
+        padding: 0;
+        li {
+            display: inline-block;
+            a {
+                display: inline-block;
+                margin: 0 10px;
+                text-transform: uppercase;
+                color: $accent-color;
+                @include transition(all, 0.35s, ease, 0s);
+                &:hover {
+                    color: $hover-color;
+                }
+            }
+        }
+    }
+}
+
+.top-phone {
+    font-size: $font-size * 1.1;
+}
+
+.hidden-menu {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 101;
+    top: 0;
+    left: 0;
+    ul {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        height: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: stretch;
+        align-content: stretch;
+        li {
+            a {
+                display: inline-block;
+                margin: 20px auto;
+                color: #fff;
+            }
+        }
+    }
+}
+
+.btn-menu {
+    display: none;
+    text-align: center;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    background-color: #fff;
+    color: $accent-color;
+    cursor: pointer;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 102;
+    font-size: $font-size * 2;
+    @include transition(all, 0.35s, ease, 0s);
+    &:hover {
+        color: $hover-color;
+    }
+}
+
+.line {
+    width: 95%;
+    background-color: #ddd;
+    height: 1px;
+    margin: auto;
+}
+
 .main-title {
-    font-size:$font-size * 2;
+    font-size: $font-size * 2;
     letter-spacing: 3px;
     margin: 0;
     padding: 10px 20px;
 }
+
 .main-img {
-    width: 100%;
+    height: 450px;
+    background: url(../img/bg/bg_main.jpg) no-repeat scroll center center;
     -moz-background-size: cover;
     -o-background-size: cover;
     -webkit-background-size: cover;
     background-size: cover;
     @include box-shadow(0, 2px, 5px, #555);
 }
+
 #owl-demo .item {
     margin: 3px;
 }
@@ -65,23 +160,30 @@ a {
     height: auto;
     @include box-shadow(0, 2px, 5px, #555);
 }
+
 .section-title {
     margin: 10px 0;
     text-align: center;
     text-transform: uppercase;
     font-size: $font-size * 1.3;
 }
+
 .container {
     max-width: 1200px;
     width: 95%;
     margin: 0 auto;
 }
-.picter-section,
+
+.nature-section,
 .bio-section,
 .history-section,
 .routes-section,
 .contacts-section {
     padding: 50px 0;
+}
+
+.nature-desc {
+    padding: 10px 0 0;
 }
 
 .wrap-bio {
@@ -99,7 +201,7 @@ a {
     width: 280px;
     margin: 20px;
     img {
-        width: 215px;
+        width: 200px;
         height: 200px;
         @include box-shadow(0, 2px, 5px, #555);
         @include border-radius(50%);
@@ -111,13 +213,11 @@ a {
     text-transform: uppercase;
     margin: 5px auto;
 }
-.history-section {
-    padding: 50px 0;
 
-}
 .history-tabs {
     text-align: center;
 }
+
 .r-tabs-anchor {
     display: inline-block;
     text-align: center;
@@ -169,22 +269,38 @@ a {
         @include box-shadow(0, 2px, 5px, #555);
     }
 }
-
 .routes-item-desc {
     padding: 0 15px;
     p {
         font-style: italic;
-        font-size: $font-size * 0.9;
+        font-size:$font-size*0.9;
     }
 }
-
 .routes-item-line {
-    background-color: $accent-color;
+    background-color:$accent-color;
     height: 15px;
     margin-top: 10px;
 }
+.wrap-contacts {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    align-content: stretch;
 
+}
+.wrap-map {
+    width: 550px;
+    height: 400px;
+    @include box-shadow(0, 2px, 5px, #555);
+    flex: 0 1 49%;
+}
 
-
-
-
+.site-footer {
+    background-color: $accent-color;
+    color: #fff;
+    padding: 30px 15px;
+    .copyright {
+        font-style: italic;
+        font-size: $font-size * 2;
+    }
+}
