@@ -134,7 +134,7 @@ a {
     margin: auto;
 }
 
-.main-title {
+img {
     font-size: $font-size * 2;
     letter-spacing: 3px;
     margin: 0;
@@ -142,14 +142,11 @@ a {
 }
 
 .main-img {
-    height: 450px;
-    background: url(../img/bg/bg_main.jpg) no-repeat scroll center center;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    -webkit-background-size: cover;
-    background-size: cover;
-    @include box-shadow(0, 2px, 5px, #555);
+    width: 100%;
 }
+
+
+
 
 #owl-demo .item {
     margin: 3px;
@@ -289,7 +286,7 @@ a {
 
 }
 .wrap-map {
-    width: 550px;
+    width: 450px;
     height: 400px;
     @include box-shadow(0, 2px, 5px, #555);
     flex: 0 1 49%;
